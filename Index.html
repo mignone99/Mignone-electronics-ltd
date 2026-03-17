@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mignone Electronics Ltd</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+  <div class="logo">Mignone Electronics Ltd</div>
+  <nav>
+    <a href="#products">Products</a>
+    <a href="#location">Location</a>
+    <a href="#repair-form">Repair Form</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section id="hero">
+  <div class="hero-content">
+    <h1>Premium Electronics & Accessories</h1>
+    <p>Quality products, reliable repairs, and exceptional service in Nyanza Market.</p>
+    <a href="#products" class="btn-primary">Explore Products</a>
+  </div>
+</section>
+
+<section id="products">
+  <h2>Our Products</h2>
+  <div class="product-grid">
+    <div class="product-card">
+      <img src="images/headphones.jpg" alt="Headphones">
+      <h3>Headphones</h3>
+      <p>High-quality sound for every device.</p>
+    </div>
+    <div class="product-card">
+      <img src="images/laptop-accessories.jpg" alt="Laptop Accessories">
+      <h3>Laptop Accessories</h3>
+      <p>Enhance your setup with premium tools.</p>
+    </div>
+    <div class="product-card">
+      <img src="images/mobiles-accessories.jpg" alt="Mobile Accessories">
+      <h3>Mobile Accessories</h3>
+      <p>Cases, chargers, cables, and more.</p>
+    </div>
+    <div class="product-card">
+      <img src="images/kettle.jpg" alt="Kettles & Devices">
+      <h3>Home Devices</h3>
+      <p>Essential devices for your home and office.</p>
+    </div>
+  </div>
+</section>
+
+<section id="location">
+  <h2>Find Us</h2>
+  <div id="map"></div>
+</section>
+
+<section id="repair-form">
+  <h2>Request a Repair</h2>
+  <form id="repairForm">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <input type="text" name="device" placeholder="Device Type" required>
+    <textarea name="issue" placeholder="Describe the Issue" required></textarea>
+    <button type="submit">Submit Request</button>
+  </form>
+  <div id="form-message"></div>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <p>Email: sandriomegan@gmail.com</p>
+  <p>Phone: 0780734128</p>
+</section>
+
+<footer>
+  <p>&copy; 2026 Mignone Electronics Ltd. All rights reserved.</p>
+</footer>
+
+<!-- Google Maps -->
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+</body>
+</html>
