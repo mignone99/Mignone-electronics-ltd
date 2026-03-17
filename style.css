@@ -1,0 +1,197 @@
+/* General */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+/* Header */
+header {
+  background-color: #004aad;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 40px;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+header nav a {
+  color: white;
+  margin-left: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+header nav a:hover {
+  color: #ffcc00;
+}
+
+/* Hero Section */
+#hero {
+  height: 80vh;
+  background: url('images/hero-bg.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+#hero::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.5);
+}
+
+.hero-content {
+  position: relative;
+  max-width: 700px;
+  z-index: 1;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  animation: fadeInDown 1s ease forwards;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  animation: fadeInUp 1s ease forwards;
+}
+
+.btn-primary {
+  padding: 12px 25px;
+  background-color: #ffcc00;
+  color: #004aad;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #e6b800;
+}
+
+/* Products */
+#products {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+#products h2 {
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+  color: #004aad;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+}
+
+.product-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Map */
+#map {
+  width: 100%;
+  height: 400px;
+  border-radius: 12px;
+  margin: 20px auto;
+}
+
+/* Repair Form */
+#repair-form {
+  padding: 60px 20px;
+  background-color: #e6f0ff;
+  text-align: center;
+}
+
+#repairForm {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#repairForm input, #repairForm textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+#repairForm button {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #004aad;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#repairForm button:hover {
+  background-color: #003080;
+}
+
+/* Contact */
+#contact {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  background-color: #004aad;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-20px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px);}
+  to { opacity: 1; transform: translateY(0);}
+}
