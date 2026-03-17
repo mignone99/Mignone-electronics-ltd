@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mignone Electronics Ltd</title>
+
+<style>
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    background: #f4f6f9;
+}
+
+header {
+    background: linear-gradient(to right, #0a1f44, #1e3c72);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+section {
+    padding: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+}
+
+.products img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 18px;
+    background: green;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #0a1f44;
+    color: white;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+    <div class="logo">🔌 Mignone Electronics Ltd</div>
+    <p>Your trusted electronics shop in Nyanza Market</p>
+</header>
+
+<section class="card">
+    <h2>Our Products</h2>
+    <div class="products">
+        <div>
+            <img src="https://images.unsplash.com/photo-1585386959984-a41552231658" alt="">
+            <p>Mobile Accessories</p>
+        </div>
+        <div>
+            <img src="https://images.unsplash.com/photo-1580894908361-967195033215" alt="">
+            <p>Extension Cables</p>
+        </div>
+        <div>
+            <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8" alt="">
+            <p>Laptop Accessories</p>
+        </div>
+        <div>
+            <img src="https://images.unsplash.com/photo-1583224475465-c5b1f1f7c4b2" alt="">
+            <p>Headphones</p>
+        </div>
+    </div>
+</section>
+
+<section class="card">
+    <h2>Repair Services</h2>
+    <p>We repair phones and electronics quickly and professionally.</p>
+
+    <h3>Book a Repair</h3>
+    <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="tel" placeholder="Phone Number" required>
+        <input type="text" placeholder="Device Type" required>
+        <textarea placeholder="Describe the problem"></textarea>
+        <button class="btn">Submit Request</button>
+    </form>
+</section>
+
+<section class="card">
+    <h2>Find Us</h2>
+    <iframe 
+        src="https://maps.google.com/maps?q=Nyanza%20Market%20Rwanda&t=&z=13&ie=UTF8&iwloc=&output=embed"
+        width="100%" height="250" style="border:0;"></iframe>
+</section>
+
+<section class="card">
+    <h2>Contact Us</h2>
+    <p>📍 Nyanza Market</p>
+    <p>📞 0780734128</p>
+    <p>📧 sandriomegan@gmail.com</p>
+    <a class="btn" href="https://wa.me/250780734128">Order via WhatsApp</a>
+</section>
+
+<footer>
+    <p>© 2026 Mignone Electronics Ltd</p>
+</footer>
+
+</body>
+</html>
